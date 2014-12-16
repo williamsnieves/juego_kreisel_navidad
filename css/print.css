@@ -1,0 +1,35 @@
+#letter{
+	display: block;
+	background: url(../assets/fondostart.png);
+	border:2px solid white;
+	height: 600px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btnletter{
+	z-index: 99999999;
+}
+
+.btnletter .btnimgletter{
+	width: 226px;
+	height: 45px;
+	margin-left: 21%;
+	margin-right: auto;
+	margin-top: -2.5em;
+	position: relative;
+}
+
+.btnletterimp{
+	z-index: 99999999;
+}
+
+.btnletterimp .btnimgletterimp{
+	width: 226px;
+	height: 45px;
+	margin-left: 52%;
+	margin-right: auto;
+	margin-top: -2.9em;
+	position: relative;
+}

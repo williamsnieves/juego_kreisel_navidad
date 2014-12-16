@@ -1,0 +1,226 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+   <meta charset="utf-8">
+  <title>Carta</title>
+  <!--<script src="js/phaser.min.js"></script>-->
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css"/>
+
+  <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="HandheldFriendly" content="true" />
+  <!-- Latest compiled and minified CSS -->
+  
+  
+
+</head>
+<body>
+  <!--<div id="mainscreen">
+	  <figure class='logobig'>
+	  	<img src="assets/logogame.png" alt="">
+	  </figure>
+
+	  <a href="#" class='initgame'>
+	  	<figure class='initbtnimg'>
+	  		<img src="assets/botoninit.png" alt="">
+	  	</figure>
+	  </a>
+
+  </div>-->
+  <div id="registro">
+  	  
+	  <figure class='logosmall'>
+	  	<img src="assets/logosmall.png" alt="">
+	  </figure>
+		
+	  <div class="contentregister">
+	  	<div id="veloRegister">
+  	  		<p></p>
+  	  	</div>
+		<form id="formsubmit">
+
+		  	<div class="contentform">
+		  		<p class="select-type">¿eres un <a id="boy" data-type="niño" href="">NIÑO</a> o una <a id="girl" data-type="niña" href="">NIÑA</a>?</p>
+		  			<div class="boxinputs">
+		  				<label for="name">Nombre y Apellido*</label>
+			  	 		<input type="text" name="name" id="name" />
+		  			</div>
+		  			<div class="boxinputs">
+		  				<label for="country">¿Dónde Vives?*</label>
+				  	 	<select name="country" id="country">
+				  	 		<span class="flecha">x</span>
+				  	 		<option value="empty">Escoge un país</option>
+				  	 		
+				  	 	</select>
+		  			</div>
+		  			<div class="boxinputs">
+		  				<label for="email_parent">Email de tus padres*</label>
+			  	 		<input type="email" name="email_parent" id="email_parent" />
+		  			</div>
+		  			<div class="boxinputs">
+		  				<label for="edad">Edad*</label>
+				  	 	<select name="edad" id="edad">
+				  	 		<span class="flecha">x</span>
+				  	 		<option value="empty">Escoge tu edad</option>
+				  	 		
+				  	 	</select>
+		  			</div>
+		  			<div class="boxinputs">
+		  				<label for="city">Ciudad</label>
+				  	 	<select name="city" id="city">
+				  	 		<span class="flecha">x</span>
+				  	 		<option value="empty">Ciudad o Provincia</option>
+				  	 		
+				  	 	</select>
+		  			</div>
+		  			<div class="boxinputs">
+		  				<label for="email">¿Tienes correo electrónico?</label>
+			  	 		<input type="email" name="email" id="email" />
+		  			</div>
+		  			<input type="hidden" id="genero" name="genero" value="" />	
+		  	</div>
+	  		
+	  	</form>
+		<button class="imgSubmit"></button>
+	  	<p class="warningmessage">Los campos señalados con el asterístco(*) son obligatorios para poder continuar</p>
+	  	 
+	  </div>
+
+  </div>
+  <div id="carta"></div>
+
+  <div id="compromiso">
+	  
+	  <div class="container_compromiso">
+	  	
+			<div class="content" id="compromisocontent">
+
+			</div>
+			<div class="content-custom-compromiso">
+				<p>Finalmente me comprometo en este 2015 a mejorar en: </p>
+				<input type="text" id="custom-commitment" name="custom-commitment" />
+			</div>
+
+			
+
+			<div class="infocontent" id="compromisocontentmsg">
+				<p>Datos Almacenados correctamente</p>
+			</div>
+			<img class="loader-commit" src="assets/loader.gif" alt="">  
+			
+	  </div>
+
+	  <a href="#" class='btncompromiso'>
+		  	<figure class='btnimgcompromiso'>
+		  		<img src="assets/btnjuguete.png" alt="">
+		  	</figure>
+	  </a>
+
+	  
+
+  </div>
+
+  <p class="hiddenText">.</p>
+
+  <div id="toys">
+	  
+	  <div class="container_toys">
+
+	  			<div class="lighter">
+					<form class="form-search">
+						<span><input type="text" id="term" class="search rounded" placeholder="Busca tu juguete"></span>
+						<input type="button" id="search-button" class="custom-search-btn" value="buscar"></span>
+					</form>
+				</div>
+	  	
+			<div class="toys_content" id="toyscontent">
+				
+			</div>
+
+
+			<div class="toys_undefined">
+				<p>
+			  	Si deseas algún otro juguete que no esté en la lista de Kreisel  por favor escríbelo en el siguiente espacio
+			  </p>
+			  <input type="text" placeholder="Escribe el nombre del juguete en este espacio y cuando termines presiona el botón VER MI CARTA"/>
+			</div>
+			<p class="warning-toy">Debes seleccionar al menos un juguete</p>
+			<img style="margin-top:2em;" class="loader" src="assets/loader.gif" alt="">
+			
+	  </div>
+
+	  <a href="#" class='btntoys'>
+		  	<figure class='btnimgtoys'>
+		  		<img src="assets/btnircarta.png" alt="">
+		  	</figure>
+	  </a>
+
+	  
+
+	  
+
+ </div>
+
+ <div id="letter">
+ 	  
+ 	  <div class="container_letter">
+ 	  		<img class="bglettercontent" src="assets/fondostart.png" alt="">
+	  	
+			<div class="text_letter">
+				<img class="bglettertext" src="assets/bgletter.png" alt="">
+				<p>Mi nombre  es $name ,este año me porté $ans1, $negativa2 hice todas mis tareas, $negativa3 me comí toda mi comida y en el año 2015 me comprometo a $compromiso y a $customcompromiso. Quisiera recibir estos juguetes en Navidad :</p>
+			</div>
+			<div class="list_toys">
+				<ul>
+					
+				</ul>
+			</div>
+			
+			<div class="message-letter">
+				<p></p>
+			</div>
+
+			<img  class="loaderfinal" src="assets/loader.gif" alt="">
+			
+	  </div>
+
+
+	  <a href="#" class='btnletter'>
+		  	<figure class='btnimgletter'>
+		  		<img src="assets/btnletter.png" alt="">
+		  	</figure>
+	  </a>
+	  <a href="#" class='btnletterimp'>
+		  	<figure class='btnimgletterimp'>
+		  		<img src="assets/btn_imprimir.png" alt="">
+		  	</figure>
+	  </a>
+
+	  
+
+	  
+ </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
+ 
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.0.2/phaser.min.js"></script>-->
+ 
+ <script src="js/phaser.min.js"></script> 
+  <script src="dist/js/game.js"></script>
+
+  <script src="js/frontservice.js"></script>
+  
+		
+  
+
+
+
+</body>
+</html>
